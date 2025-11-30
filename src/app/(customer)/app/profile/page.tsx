@@ -21,7 +21,7 @@ import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { IconEdit, IconUser, IconMail, IconShield } from '@tabler/icons-react';
 // Import komponen InstallPrompt yang baru dibuat
-import { InstallPrompt } from '@/components/ui/InstallPrompt';
+import { InstallPrompt } from '@/components/InstallPrompt';
 
 export default function ProfilePage() {
   const { data: session, update: updateSession } = useSession();
