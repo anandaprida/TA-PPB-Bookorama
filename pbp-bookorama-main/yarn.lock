@@ -5294,7 +5294,7 @@ next-nprogress-bar@^2.1.2:
   dependencies:
     nprogress "^0.2.0"
 
-"next@^12.2.5 || ^13 || ^14 || ^15 || ^16", "next@>= 6.0.0", next@>=14.0.0, next@latest:
+"next@^12.2.5 || ^13 || ^14 || ^15 || ^16", next@^16.0.5, "next@>= 6.0.0", next@>=14.0.0:
   version "16.0.5"
   resolved "https://registry.npmjs.org/next/-/next-16.0.5.tgz"
   integrity sha512-XUPsFqSqu/NDdPfn/cju9yfIedkDI7ytDoALD9todaSMxk1Z5e3WcbUjfI9xsanFTys7xz62lnRWNFqJordzkQ==
