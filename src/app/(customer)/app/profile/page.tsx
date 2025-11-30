@@ -20,6 +20,8 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { IconEdit, IconUser, IconMail, IconShield } from '@tabler/icons-react';
+// Import komponen InstallPrompt yang baru dibuat
+import { InstallPrompt } from '@/components/ui/InstallPrompt';
 
 export default function ProfilePage() {
   const { data: session, update: updateSession } = useSession();
@@ -77,8 +79,12 @@ export default function ProfilePage() {
   const userInitial = session?.user?.name?.charAt(0).toUpperCase() || 'U';
 
   return (
-    <div className='flex flex-col gap-6'>
+    <div className='flex flex-col gap-6 pb-10'>
       <h1 className='text-2xl font-bold'>Profil Saya</h1>
+
+      {/* --- Tombol Install PWA --- */}
+      <InstallPrompt />
+      {/* ------------------------- */}
 
       <Card className='w-full overflow-hidden border-none shadow-sm'>
         <div className='bg-primary/10 h-32 w-full absolute top-0 z-0'></div>
